@@ -1,0 +1,50 @@
+#flashdrive
+{
+	position: relative;
+	top: 64px;
+	width: 96px;
+	height: 192px;
+	border-radius: 16px;
+	background-color: black;
+	font-size: xx-large;
+	text-align: center;
+    z-index: 0;
+}
+#flashdrive:before
+{
+	display: block;
+	position: relative;
+	left: 16px;
+	top: -63px;
+	width: 62px;
+	height: 46px;
+	padding-top: 16px;
+	border: 1px solid black;
+	border-bottom-color: transparent;
+	content: "\25a0 \a0 \a0 \25a0";
+	color: black;
+	font-size: large;
+	text-align: center;
+}
+#dot{
+    display: block;
+    position: absolute;
+    background: red;
+    z-index: 1;
+    top:180px;
+    left: 53px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+
+}
+
+#dot:hover{
+    animation: colorR 0.5s linear infinite;
+}
+@keyframes colorR{
+    0%{background: blue;}
+    33%{background:red;}
+    66%{background:blue;}
+    100%{background:red;}
+}
